@@ -1,0 +1,165 @@
+/*======================================================================*/
+/*				   	   		      CSS - MODAL          						*/
+/*======================================================================*/
+
+
+/*---------------------------------------------------------------------*/
+.modal {
+   background-color: rgba(255, 255, 255, 0.5);
+   text-align: center;
+}
+
+.modal-header {
+   border-bottom: 0 none;
+}
+
+.modal-title {
+   color: black;
+}
+
+.modal-footer {
+   border-top: 0 none;
+   justify-content: center;
+}
+
+/*---------------------------------------------------------------------*/
+
+.btn-modal-nav,
+.btn-modal-nav:focus {
+   color: rgba(0, 0, 0, 0.6);
+   font-size: x-large;
+   border: none;
+   background: none;
+}
+
+.btn-modal-nav:hover,
+.btn-modal-nav:focus:hover {
+   color: rgba(0, 0, 0, 1);
+}
+
+
+
+
+
+/*---------------------------------------------------------------------*/
+.homepageModal .modal-content {
+   background: linear-gradient(-45deg, rgba(88, 82, 153, 1) 10%, rgba(189, 0, 255, 1) 80%)center center no-repeat;
+   color: white;
+   border-top-left-radius: 50px;
+   border-top-right-radius: 5px;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 50px;
+}
+
+.btn-modal,
+.btn-modal:focus {
+   color: rgba(255, 255, 255, 0.7);
+   border: none;
+   background: none;
+}
+
+.btn-modal:hover,
+.btn-modal:focus:hover {
+   color: rgba(255, 255, 255, 1);
+   border: none;
+   background: none;
+   text-decoration: underline;
+}
+
+/*---------------------------------------------------------------------*/
+
+
+
+
+/*---------------------------------------------------------------------*/
+.platformModal .modal-content {
+   background: white;
+   border: solid 1px rgb(88, 82, 153);
+}
+
+.modal-add-btn {
+   display: flex;
+   align-items: center;
+   padding: 5px 50px;
+   margin-bottom: 10px;
+   font-size: 15px;
+   color: rgba(88, 82, 153, 1);
+   border: solid 1px rgba(88, 82, 153, 1);
+   border-radius: 100px;
+   background: none;
+}
+
+.modal-add-btn span {
+   padding-left: 10px;
+}
+
+.modal-add-btn:hover {
+   border: 1px solid rgba(88, 82, 153, 1);
+   background: rgba(88, 82, 153, 1);
+   color: rgb(255, 255, 255);
+}
+
+.modal-btn,
+.modal-btn:focus {
+   align-items: center;
+   padding: 5px 50px;
+   margin-top: 20px;
+   font-size: 15px;
+   color: rgba(88, 82, 153, 1);
+   border: solid 1px rgba(88, 82, 153, 1);
+   border-radius: 100px;
+   background: none;
+}
+
+.modal-btn:hover,
+.modal-btn:focus:hover {
+   border: 1px solid rgba(88, 82, 153, 1);
+   background: rgba(88, 82, 153, 1);
+   color: rgb(255, 255, 255);
+}
+/*---------------------------------------------------------------------*/
+
+
+.agents-container {
+   max-height: 200px; 
+   overflow-y: auto; 
+ }
+
+
+
+.profileModal .modal-header{
+   background-color: rgba(88, 82, 153, 0.7);
+   padding: 8px 20px;
+}
+.profileModal .modal-title i{
+   font-size: 30px;
+   color: rgba(0,0,0,0.8);
+   padding-right: 5px;
+}
+
+
+.monitoringModal {
+   text-align: left;
+}
+
+.snapshot_markets {
+   color: black;
+   margin-bottom: 20px;
+   font-size: 30px;
+}
+.snapshot_exchange{
+   font-size: 15px;
+   text-transform: capitalize;
+}
+.snapshot_avg{
+   color: black;
+}
+.snapshot_avg .snapshot_avg_title{
+   font-size: 20px;
+   padding-bottom: 20px;
+}
+
+.snapshot_avg .snapshot_avg_stats{
+   padding: 10px;
+   list-style: none;
+}

@@ -1,0 +1,26 @@
+/*======================================================================*/
+/*				   	   		      CSS - FOOTER          						*/
+/*======================================================================*/
+
+footer {
+   font-size: 15px;
+   background: linear-gradient(90deg, rgba(0,0,0, 0.9) 0%, rgba(128, 5, 243, 0.9) 100%);
+   background-size: cover;
+}
+
+footer .container {
+   padding: 7px;
+}
+
+footer .footer-bottom {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+/*------------------------------> Toggle Navbar */
+@media screen and (max-width: 768px) {
+   footer ul a{
+      padding: 10px 10px;
+   }
+}

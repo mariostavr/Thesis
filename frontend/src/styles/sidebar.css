@@ -1,0 +1,157 @@
+/*======================================================================*/
+/*				   	   		      CSS - SIDEBAR          						*/
+/*======================================================================*/
+
+.sidebar {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 300px;
+   height: 100%;
+   background: linear-gradient(0deg, rgba(128, 5, 243, 1) 0%, rgba(0, 0, 0, 1) 100%);
+   z-index: 999;
+   transition: width 0.5s ease-in-out;
+}
+
+.sidebar .logo {
+   padding-top: 50px;
+}
+
+.docker-mqtt Form {
+   color: white;
+}
+
+.sidebar ul {
+   list-style: none;
+   padding: 0;
+}
+
+.sidebar li {
+   padding: 10px 0;
+   margin: 0;
+}
+
+.sidebar i {
+   font-size: 25px;
+   margin-bottom: 6px;
+}
+
+.sidebar .nav-text {
+   margin-left: 10px;
+   font-weight: 600;
+}
+
+.sidebar .nav-link {
+   padding: 10px 0;
+   align-items: center;
+   color: rgba(255, 255, 255, 1);
+   text-decoration: none;
+}
+
+.sidebar .nav-menu a, .sidebar .nav-menu a:focus {
+   font-size: 15px;
+   font-weight: 600;
+   color: rgba(255, 255, 255, 0.7);
+   transition: 0.3s;
+   position: relative;
+}
+.sidebar .nav-menu ul li a:before { /*> Underilined on Hover */
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   bottom: 0px;
+   left: 0;
+   background-color: #fff;
+   visibility: hidden;
+   width: 0px;
+   transition: all 0.3s ease-in-out 0s;
+}
+.sidebar .nav-menu li a:hover:before {
+   visibility: visible;
+   width: 100%;
+}
+.sidebar .nav-menu li a:hover {
+   color: #fff;
+}
+
+
+.sidebar .btn-profile {
+   display: flex;
+   padding: 5px 60px 0 30px;
+   align-items: center;
+   justify-content: center;
+   color: rgba(255, 255, 255, 1);
+   border-radius: 100px;
+   text-decoration: none;
+   border: none;
+   background: none;
+   outline: none;
+}
+.sidebar .btn-profile:hover {
+   color: rgb(105, 241, 235);
+   transition: all 0.3s;
+}
+
+
+
+.sidebar .btn-logout {
+   display: flex;
+   padding: 5px 15px;
+   align-items: center;
+   justify-content: center;
+   color: rgba(255, 255, 255, 1);
+   border-radius: 100px;
+   text-decoration: none;
+   border: none;
+   background: none;
+   outline: none;
+}
+
+.sidebar .btn-logout:hover {
+   color: rgb(255, 0, 191);
+   transition: all 0.3s;
+}
+
+
+/* Show/hide sidebar on small screens */
+@media screen and (max-width: 1440px) {
+   .sidebar {
+      width: 80px;
+      transition: width 0.5s ease-in-out;
+   }
+
+   .sidebar h2 {
+      display: none;
+   }
+
+   .sidebar .docker-mqtt form label {
+      display: none;
+   }
+   .nav-text {
+      display: none;
+   }
+
+   .sidebar .nav-link {
+      width: 80px;
+      padding: 10px 27.5px;
+   }
+
+   .sidebar .nav-menu li a:hover:before {
+      visibility: hidden;
+   }
+   .sidebar .nav-menu li a:hover {
+      color: #fff;
+   }
+   
+
+   .sidebar .btn-profile, 
+   .sidebar .btn-logout {
+      padding: 0;
+      width: 40px;
+   }
+}

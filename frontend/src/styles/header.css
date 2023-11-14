@@ -1,0 +1,104 @@
+/*======================================================================*/
+/*				   	   		      CSS - HEADER          						*/
+/*======================================================================*/
+
+
+
+/*------------------------------> Header */
+header {
+   z-index: 1;
+   padding: 20px 0;
+   transition: all 0.5s ease-in-out;
+}
+.colored-header {
+   background: linear-gradient(-90deg, rgba(128, 5, 243, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+   padding: 8px 0;
+}
+
+
+/*------------------------------> Logo */
+header .header-logo {
+   font-size: 30px;
+   font-weight: 500;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   margin: 0px;
+}
+header .header-logo img {
+   max-height: 55px;
+   padding-right: 5px;
+   padding-bottom: 5px;
+}
+
+
+/*------------------------------> Navbar */
+header .navbar ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+}
+header .navbar ul li {
+   padding: 5px 0 5px 20px;
+}
+header .navbar a, header .navbar a:focus {
+   font-size: 15px;
+   font-weight: 600;
+   color: rgba(255, 255, 255, 0.7);
+   transition: 0.3s;
+   position: relative;
+}
+header .navbar ul li a:before { /*> Underilined on Hover */
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   bottom: -5px;
+   left: 0;
+   background-color: #fff;
+   visibility: hidden;
+   width: 0px;
+   transition: all 0.3s ease-in-out 0s;
+}
+header .navbar li a:hover:before {
+   visibility: visible;
+   width: 100%;
+}
+header .navbar li a:hover {
+   color: #fff;
+}
+
+
+/*------------------------------> Toogle Navbar Button*/
+.nav-toggle {
+   background: transparent;
+   border: none;
+   color: white;
+   font-size: 25px;
+   display: none;
+   z-index: 3;
+}
+
+
+
+/*------------------------------> Toggle Navbar */
+@media screen and (max-width: 768px) {
+   header .nav-toggle {
+      display: block;
+   }
+   header .navbar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 220px;
+      height: 100vh;
+      background: linear-gradient(90deg, rgba(128, 5, 243, 1) 10%, rgba(0, 0, 0, 1) 95%);
+      transition: transform 0.5s ease-in-out;
+   }
+   header .navbar ul{
+      display: block;
+   }
+   header .navbar.show {
+      transform: translateX(100%);
+   }
+}

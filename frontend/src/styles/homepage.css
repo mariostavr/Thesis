@@ -1,0 +1,181 @@
+/*======================================================================*/
+/*				   	   		      CSS - HOMEPAGE          				*/
+/*======================================================================*/
+
+
+/*---------- HOMEPAGE SECTIONS ----------*/
+.homepage section {
+    margin: 0 0 0 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    height: auto;    
+}
+
+.homepage .section-title{
+    font-weight: 600;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.8)
+}
+
+.homepage .section-content{
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+/*--------------- HOME ---------------*/
+#home {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(128, 5, 243, 0.5) 0%, rgba(73, 1, 99, 0.5) 50%), url('/public/assets/img/background/home-bg.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+
+#home h1 {
+    margin: 0;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+#home h2 {
+    margin: 10px 0 0 0;
+    font-size: 30px;
+}
+
+#home h3 {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+}
+
+#home .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+
+
+/*--------------- ABOUT ---------------*/
+#about img{
+    max-width: 100%;
+}
+
+
+
+/*--------------- STATS ---------------*/
+
+#statistics {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+#statistics .stats {
+    padding: 0 25px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#statistics .barTitle {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+}
+/*------------------------------------------*/
+
+
+
+
+/*--------------- HOW ---------------*/
+
+
+/*--------------- MEDIA ---------------*/
+@media (min-width: 1200px) {
+    #home {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 991px) {
+    #home, #about, #how {
+        text-align: center;
+    }
+
+    #home .container,
+    #home .container-fluid {
+        padding-top: 68px;
+    }
+
+    #home .animated {
+        -webkit-animation: none;
+        animation: none;
+    }
+
+    #home .home-img {
+        text-align: center;
+    }
+
+    #home .home-img img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    #home h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    #home .home-img img {
+        width: 30%;
+    }
+
+    #statistics .stats{
+        padding: 0;
+        width: 100%;
+    }
+
+    #popularMarkets{
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    #home .home-img img {
+        width: 70%;
+    }
+    
+}
+
+@media (max-width: 575px),
+(max-height: 600px) {
+    #home {
+        height: auto;
+        padding: 50px 0;
+    }
+}
+
+
+/*--------------- ANIMATIONS ---------------*/
+@-webkit-keyframes up-down {
+    0% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
