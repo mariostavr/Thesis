@@ -5,9 +5,9 @@ Providing liquidity is considered a necessary function in financial markets, as 
 The introduction of liquidity mining aims to address the above problem that was mentioned, the limited number of participants in liquidity provision. It allows anyone to provide liquidity in centralized and decentralized markets by developing and configuring automated market-making strategies according to their preferences.
 
 # Dependencies
-Python: https://www.python.org/downloads/
-Node: https://nodejs.org/en/download
-Docker: https://docs.docker.com/desktop/install/windows-install/
+Python: https://www.python.org/downloads/ <br>
+Node: https://nodejs.org/en/download <br>
+Docker: https://docs.docker.com/desktop/install/windows-install/ <br>
 
 # How to start
 Backend Initialization:
